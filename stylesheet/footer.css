@@ -1,0 +1,9 @@
+.footer{
+    grid-area: fo;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.footer span{
+    color: #14318F;
+}

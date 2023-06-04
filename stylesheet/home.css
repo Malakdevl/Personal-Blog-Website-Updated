@@ -1,0 +1,144 @@
+.containr{
+    display: grid;
+    grid-template-columns: repeat(2,f1);
+    grid-template-rows: repeat(2,f1);
+    width: 100%;
+    height: 100vh;
+   grid-template-areas: 
+   "hd hd hd hd"
+   "lm lm lm rm"
+   "cr cr cr cr"
+   "fo fo fo fo"
+   ;
+}
+
+.containr button{
+    background-color: #EA7B2C;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.containr button a{
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+.containr button:hover{
+    background-color: #FFB86A;
+}
+
+.leftmain{
+    padding-top: 50px;
+    padding-left: 40%;
+    padding-bottom: 10%;
+    line-height: 0.9;
+    grid-area: lm;
+}
+.leftmain h1{
+    font-weight: bold;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftmain span{
+    color: #14318F;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+.rightmain{
+    padding-top: 50px;
+    padding-right:10%;
+    padding-bottom: 10%;
+    grid-area: rm;
+   text-align: right;
+}
+.rightmain img{
+    width: 70%;
+    border-radius: 100%;
+    border-end-end-radius: 40px;
+}
+
+.card {
+    grid-area: cr;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin: 20px;
+    margin-left: 90px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .middel {
+    padding: 2px 16px;
+  }
+  .card button{
+    color: #FEFEFE;
+    background-color: #2e4db4;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold; 
+  }
+
+/*Tablet*/
+@media(max-width: 900px){
+    .leftmain{
+        padding-top: 50px;
+        padding-left: 10%;
+        padding-bottom: 10%;
+        line-height: 0.9;
+        grid-area: lm;
+    }
+    .rightmain{
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 10%;
+        grid-area: rm;
+       
+    }
+    .rightmain img{
+        width: 400px;
+        border-radius: 100%;
+        border-end-end-radius: 40px;
+    }
+}
+
+/*mobile*/
+@media(max-width: 600px){
+
+    .containr{
+        display: grid;
+        grid-template-columns: repeat(1,f1);
+        grid-template-rows: repeat(1,f1);
+        width: 100%;
+        height: 100vh;
+       grid-template-areas: 
+       "hd "
+       "rm"
+       "lm"
+       "fo"
+       ;
+    }
+    .leftmain{
+        padding-top: 10px;
+        padding-bottom: 10%;
+        line-height: 0.9;
+        grid-area: lm;
+    }
+    .rightmain{
+        padding-top: 50px;
+        padding-bottom: 10%;
+        grid-area: rm;
+    }
+}

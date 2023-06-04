@@ -1,0 +1,132 @@
+
+.containr{
+    display: grid;
+    grid-template-columns: repeat(2,f1);
+    grid-template-rows: repeat(2,f1);
+    width: 100%;
+    height: 100vh;
+   grid-template-areas: 
+   "hd hd hd hd"
+   "m m m m"
+   "fo fo fo fo"
+   ;
+}
+
+.main{
+    width: 70%;
+    margin: 70px;
+    margin-left: 200px;
+    grid-area: m;
+    display: flex;
+    text-align: center;
+    border: 2px solid #14318F;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.avtar{ 
+    text-align: right;
+    padding: 10px;
+}
+.avtar img{ 
+    width: 40%;
+    border-radius: 300px;
+    
+}
+
+.info { 
+    text-align: left;
+    padding-right: 200px;
+    padding-top: 100px;
+    line-height: 0.9;
+}
+.info img{ 
+    width: 10%;
+}
+.info h1{ 
+   line-height: 0.1;
+    font-weight: bold;
+    color: #14318F;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info h2{ 
+    line-height: 0.1;
+     font-weight: bold;
+     color: #EA7B2C;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .info h3{ 
+    line-height: 0.1;
+    font-size: 20px;
+     font-weight: bold;
+     color: #EA7B2C;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .info p{ 
+    line-height: 0.9;
+    font-size: 20px;
+    font-family:'Times New Roman';
+ }
+ 
+
+.info ul li{ 
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    
+}
+/*Tablet*/
+@media(max-width: 900px){
+    .main{
+        grid-area: m;
+        display: block;
+        margin-left: 60px;
+        border: 2px solid #14318F;
+        border-radius: 40px;
+        background-color: rgb(255, 255, 255);
+    }
+    .avtar{ 
+        text-align: center;
+        padding: 10px;
+    }
+    .info { 
+        text-align: justify;
+        text-align: center;
+       padding: 10px;
+        line-height: 1;
+    }
+}
+/*mobile*/
+@media(max-width: 600px){
+
+    .containr{
+        display: grid;
+        grid-template-columns: repeat(1,f1);
+        grid-template-rows: repeat(1,f1);
+        width: 100%;
+        height: 100vh;
+       grid-template-areas: 
+       "hd "
+       "m"
+       "fo"
+       ;
+    }
+    .main{
+        grid-area: m;
+        display: block;
+        margin-left: 60px;
+        border: 2px solid #14318F;
+        border-radius: 40px;
+        background-color: rgb(255, 255, 255);
+    }
+    .avtar{ 
+        text-align: center;
+        padding: 10px;
+    }
+    .info { 
+        text-align: justify;
+        text-align: center;
+       padding: 10px;
+        line-height: 1;
+    }
+}
